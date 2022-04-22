@@ -18,8 +18,13 @@ dubbo:
     name: dubbo
   cloud:
     subscribed-services: dubbo-spring-cloud-provider
+  # 链路追踪
   consumer:
     check: false
+    filter: tracing
+  # 链路追踪
+  provider:
+    filter: tracing
 spring:
   application:
     name: dubbo-spring-cloud-consumer
@@ -37,3 +42,6 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
+logging:
+  level:
+    root: info

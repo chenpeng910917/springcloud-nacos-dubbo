@@ -18,6 +18,12 @@ public class HelloProviderController {
     @DubboReference(version = "1.0.0", group = "consumer", timeout = 3000)
     private HelloConsumerRpc helloConsumerRpc;
 
+    /**
+     * http://localhost:10800/hello?name=李四&age=11
+     *
+     * @param param 入参
+     * @return 反参
+     */
     @GetMapping(value = "/hello")
     public HelloConsumerVO hello(HelloConsumerParam param) {
         log.info("HelloProviderController param={}", param);
