@@ -20,7 +20,7 @@
     "uri": "lb://dubbo-spring-cloud-provider"
 }
 ]
-```json
+```
 
 
 请求地址  请求网关服务 网关服务转发到provider服务  把provider和consumer服务都启动起来
