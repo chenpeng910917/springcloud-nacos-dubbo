@@ -24,4 +24,4 @@
 
 
 请求地址  请求网关服务 网关服务转发到provider服务  把provider和consumer服务都启动起来
-127.0.0.1:5001/hello?name=张三&age=22
+127.0.0.1:5001/hello?name=张三&age=22&token=fd
