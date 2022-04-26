@@ -82,26 +82,12 @@
         </dependency>
         <!-- 链路追踪-->
 
-        <!--        swagger依赖开始-->
-        <!--        主要依赖-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>2.9.2</version>
-        </dependency>
-        <!--        官方ui-->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger-ui</artifactId>
-            <version>2.6.1</version>
-        </dependency>
-        <!--        bootstrap-ui-->
+        <!-- swagger生成文档和调试-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
-            <artifactId>swagger-bootstrap-ui</artifactId>
-            <version>1.9.3</version>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
         </dependency>
-        <!--        swagger依赖结束-->
 
     </dependencies>
 
