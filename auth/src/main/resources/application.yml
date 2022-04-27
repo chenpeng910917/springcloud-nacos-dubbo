@@ -1,23 +1,35 @@
 server:
-    port: 10802
+  port: 10802
 
 spring:
-    application:
-        name: dubbo-spring-cloud-auth
-    #  profiles:
-    #    active: dev
-    cloud:
-        nacos:
-            discovery:
-                server-addr: 127.0.0.1:8848
-            config:
-                server-addr: 127.0.0.1:8848
-                file-extension: yaml
-    #        namespace: 66b394c6-e824-4489-a93a-535933bb57d9
-    #        group: DEFAULT_GROUP
-    main:
-        allow-bean-definition-overriding: true
+  application:
+    name: dubbo-spring-cloud-auth
+  #  profiles:
+  #    active: dev
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+  #        namespace: 66b394c6-e824-4489-a93a-535933bb57d9
+  #        group: DEFAULT_GROUP
+  main:
+    allow-bean-definition-overriding: true
+
+# redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#    password: dfgsdsfgfsd
+    jedis:
+      pool:
+        max-idle: 32
+        max-wait: -1
+        min-idle: 0
+    timeout: 0
 
 logging:
-    level:
-        root: info
+  level:
+    root: info
