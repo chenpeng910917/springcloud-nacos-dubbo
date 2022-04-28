@@ -1,0 +1,10 @@
+spring:
+    application:
+        name: rocketmq
+server:
+    port: 10805
+
+rocketmq:
+    name-server: localhost:9876
+    producer:
+        group: my-group

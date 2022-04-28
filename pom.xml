@@ -22,6 +22,8 @@
         <module>dubbo-provider-interface</module>
         <module>es</module>
         <module>gateway</module>
+        <module>mysql</module>
+        <module>rocketmq</module>
     </modules>
 
     <properties>
