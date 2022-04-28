@@ -16,6 +16,9 @@ public class RocketMQController {
     @Resource
     private RocketMQProvider RocketMQProvider;
 
+    /**
+     * 127.0.0.1:10805/sendSmg
+     */
     @RequestMapping("/sendSmg")
     public void sendSmg() {
         RocketMQProvider.sendMessage();
