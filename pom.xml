@@ -20,6 +20,7 @@
         <module>dubbo-consumer-interface</module>
         <module>dubbo-provider</module>
         <module>dubbo-provider-interface</module>
+        <module>es</module>
         <module>gateway</module>
     </modules>
 

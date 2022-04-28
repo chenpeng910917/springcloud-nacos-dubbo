@@ -1,0 +1,28 @@
+server:
+    port: 10803
+
+spring:
+    application:
+        name: dubbo-spring-cloud-es
+    #  profiles:
+    #    active: dev
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 127.0.0.1:8848
+            config:
+                server-addr: 127.0.0.1:8848
+                file-extension: yaml
+    #        namespace: 66b394c6-e824-4489-a93a-535933bb57d9
+    #        group: DEFAULT_GROUP
+    main:
+        allow-bean-definition-overriding: true
+    #es
+    data:
+        elasticsearch:
+            rest:
+                uris: http://localhost:9200
+
+logging:
+    level:
+        root: info
