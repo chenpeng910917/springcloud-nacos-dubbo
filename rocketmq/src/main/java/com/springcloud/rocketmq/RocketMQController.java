@@ -18,6 +18,6 @@ public class RocketMQController {
 
     @RequestMapping("/sendSmg")
     public void sendSmg() {
-        RocketMQProvider.run();
+        RocketMQProvider.sendMessage();
     }
 }
