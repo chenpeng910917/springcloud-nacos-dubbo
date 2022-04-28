@@ -1,0 +1,18 @@
+server:
+  port: 10804
+spring:
+  application:
+    name: mysql
+
+  datasource:
+    name: moose
+    url: jdbc:mysql://localhost:3306/spring_cloud?useUnicode=true&characterEncoding=UTF-8&useAffectedRows=true&connectTimeout=1000&socketTimeout=20000&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+
+mybatis:
+  mapper-locations: classpath*:/mapper/*Mapper.xml
+  configuration:
+    map-underscore-to-camel-case: true
