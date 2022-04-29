@@ -1,4 +1,4 @@
-package com.springcloud.auth.config;
+package com.springcloud.auth.redis;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;

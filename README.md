@@ -4,4 +4,4 @@
 http://localhost:10800/doc.html
 
 ## redisson api
-com.springcloud.auth.config.RedissonController  
+com.springcloud.auth.redis.RedissonController  

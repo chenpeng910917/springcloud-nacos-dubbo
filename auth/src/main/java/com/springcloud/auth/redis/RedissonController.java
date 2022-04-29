@@ -1,4 +1,4 @@
-package com.springcloud.auth.config;
+package com.springcloud.auth.redis;
 
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.Redisson;
