@@ -23,6 +23,7 @@
         <module>es</module>
         <module>gateway</module>
         <module>mysql</module>
+        <module>nacos</module>
         <module>rocketmq</module>
     </modules>
 
