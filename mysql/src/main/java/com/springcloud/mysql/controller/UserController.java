@@ -37,7 +37,7 @@ public class UserController {
 
     /**
      *
-     * 127.0.0.1:10804/queryAllByLimit?offset=0&limit=10
+     * 127.0.0.1:10804/user/queryAllByLimit?offset=0&limit=10
      * 查询多条数据
      *
      * @param offset 查询起始位置

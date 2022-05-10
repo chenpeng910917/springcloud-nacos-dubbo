@@ -41,6 +41,8 @@ spring:
 #        group: DEFAULT_GROUP
   main:
     allow-bean-definition-overriding: true
+    # 解决dubbo循环依赖问题
+    allow-circular-references: true
 
 logging:
   level:
