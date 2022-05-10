@@ -22,7 +22,7 @@ public class HelloProviderController {
      * http://localhost:10800/hello?name=李四&age=11
      *
      * @param param 入参
-     * @return 反参
+     * @return 返参
      */
     @GetMapping(value = "/hello")
     public HelloConsumerVO hello(HelloConsumerParam param) {

@@ -19,7 +19,8 @@ spring:
         cors-configurations:
           '[/**]':
             # 允许任何域名使用
-            allowedOrigins: "*"
+#            allowedOrigins: "*"
+            allowedOriginPatterns: "*"
             # 允许任何头
             allowedHeaders: "*"
             # 允许任何方法(post、get等)
@@ -34,3 +35,7 @@ gateway:
       config:
         dataId: gateway-router # 网关nacos dataId配置
         group: DEFAULT_GROUP   # 网关nacos group配置
+
+logging:
+  level:
+    root: info
