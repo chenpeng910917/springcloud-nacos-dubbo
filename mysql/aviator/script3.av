@@ -1,0 +1,43 @@
+let result = false;
+for i in list {
+  println(i);
+  println(i.channels);
+  ## 判断渠道
+  if i.channels!="ALL" {
+      result = string.contains(i.channels,channel);
+      if !result {
+          println(i.channels+"9行"+channel);
+          continue;
+      }
+  } else {
+      result = true;
+  }
+
+ ## 判断城市
+  if i.cityCodes!="ALL" {
+      result = string.contains(i.cityCodes,cityCode);
+      if !result {
+           println(i.cityCodes+"20行"+cityCode);
+          continue;
+      }
+  } else {
+      result = true;
+  }
+
+  ## 判断时间
+  if i.startTime!= nil && i.endTime!=nil {
+      result = time > i.startTime && time < i.endTime;
+      if !result {
+           println(i.startTime+"31行"+time);
+          continue;
+      }
+  } else {
+      result = true;
+  }
+
+  if result {
+      println("提前返回结果"+i);
+      return result;
+  }
+}
+return result;

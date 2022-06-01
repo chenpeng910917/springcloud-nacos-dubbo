@@ -1,0 +1,29 @@
+let result = false;
+
+if channels!="ALL" {
+    result = string.contains(channels,channel);
+    if !result {
+        return false;
+    }
+} else {
+    result = true;
+}
+
+if cityCodes!="ALL" {
+    result = string.contains(cityCodes,cityCode);
+    if !result {
+        return false;
+    }
+} else {
+    result = true;
+}
+
+if startTime!= nil && endTime!=nil {
+    result = time > startTime && time < endTime;
+    if !result {
+        return false;
+    }
+} else {
+    result = true;
+}
+return result;

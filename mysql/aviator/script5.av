@@ -1,0 +1,73 @@
+let channels = seq.list("gaode","ziyou");
+let cityCodes = seq.list("100011","200011");
+let floatMoneyUp = seq.list(0,11);
+let floatMoneyDown = seq.list(10,20);
+let floatMoneys = seq.list(5,8);
+
+let result = false;
+for i in channels {
+  ## 判断渠道
+  println(i);
+  if i!="ALL" {
+      result = i==channel;
+      if !result {
+          continue;
+      } else {
+          result = true;
+          break;
+      }
+  } else {
+      result = true;
+      break;
+  }
+}
+
+if !result {
+  println("渠道提前返回不匹配");
+  return false;
+}
+
+ ## 判断城市
+for i in cityCodes {
+  if i!="ALL" {
+      result = i==cityCode;
+      if !result {
+          continue;
+      } else {
+        result = true;
+        break;
+      }
+  } else {
+      result = true;
+      break;
+  }
+}
+
+if !result {
+println("城市提前返回不匹配");
+  return false;
+}
+
+ ## 判断浮动金额 浮动范围区间并且小于浮动金额
+let sum = 0;
+for i in floatMoneyUp {
+    result = money > i && money < floatMoneyDown[sum] && floatMoneys[sum] >= floatMoney;
+    sum = sum + 1;
+    if !result {
+        continue;
+    } else {
+        result = true;
+        break;
+    }
+}
+
+if !result {
+  println("浮动金额提前返回不匹配");
+  return false;
+}
+
+  ## 判断时间
+result = time > "2022-03-01 22:33:23" && time < "2022-05-20 22:33:23";
+
+return result;
+

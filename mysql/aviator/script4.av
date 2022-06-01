@@ -1,0 +1,49 @@
+## 数据格式
+{
+    "channels":"gaode,ziyou",
+    "cityCodes":"100011,200011",
+    "startTime":"2022-03-01 22:33:23",
+    "endTime":"2022-05-20 22:33:23"
+}
+## 或
+{
+    "channels":"ALL",
+    "cityCodes":"ALL",
+    "startTime":"",
+    "endTime":""
+}
+
+string.contains(channels,channel) && string.contains(cityCodes, cityCode) &&  time > startTime && time < endTime
+string.contains("gaode,ziyou",channel) && string.contains("100011,200011", cityCode) &&  time > "2022-03-01 22:33:23" && time < "2022-05-20 22:33:23"
+string.contains("gaode,ziyou",channel) && string.contains("100011,200011", cityCode) &&  time > "2022-03-01 22:33:23" && time < "2022-05-20 22:33:23 && floatMoney < "
+
+
+## 规则  分主体规则
+let result = false;
+
+## 渠道规则
+result = string.contains("gaode,ziyou",channel);
+if !result {
+    return false;
+}
+
+## 城市规则
+result = string.contains("100011,200011",cityCode);
+if !result {
+    return false;
+}
+
+
+## 时间规则
+result = time > "2022-03-01 22:33:23" && time < "2022-05-20 22:33:23";
+if !result {
+    return false;
+}
+
+return result;
+
+## 或
+
+## 规则  默认规则
+let result = true;
+return result;

@@ -1,0 +1,27 @@
+if channels!="ALL" {
+    string.contains(channels,channel);
+    return string.contains(channels,channel);
+} else {
+    return true;
+}
+
+if cityCodes!="ALL" {
+    return string.contains(cityCodes,cityCode);
+} else {
+    return true;
+}
+
+for i in list {
+  println(i);
+}
+
+for i in list {
+  println(i.channels);
+  println(i.cityCodes);
+}
+
+if startTime!= nil && endTime!=nil {
+    return time > startTime && time < endTime;
+} else {
+    return true;
+}
